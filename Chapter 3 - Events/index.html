@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Events</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+		background-image:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	</style>
+	</head>
+		<body>
+		<h1>Click The Marker to Zoom</h1>
+		<p>We still use the map from the previous page: a map centered on London, England.</p>
+		<p>Now we want to zoom when a user is clicking on the marker (We attach an event handler to a marker that zooms the map when clicked).</p>
+		<div id="googleMap" style="width:500px;height:380px;"></div>
+		<p>We register for event notifications using the addListener() event handler. That method takes an object, an event to listen for, and a function to call when the specified event occurs.</p>
+		<h1>Pan Back to Marker</h1>
+		<p>Here, we add an event handler to the map for changes to the 'center' property and pan the map back to the marker after 3 seconds on a center_changed event:</p>
+		<h1>Set Markers and Open InfoWindow for Each Marker</h1>
+		<p>Run a function when the user clicks on the map.</p>
+		<p>The placeMarker() function places a marker where the user has clicked, and shows an infowindow with the latitudes and longitudes of the marker:</p>
+		<div id="googleMap1" style="width:500px;height:380px;"></div>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="script.js" type="text/javascript"></script>
+		</body>
+</html>
+	

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Controls</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+		background-image:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	</style>
+	</head>
+		<body>
+		<h1>Google Maps - Disabling The Default Controls</h1>
+		<p>You may instead wish to turn off the default controls.</p>
+		<p>To do so, set the Map's disableDefaultUI property (within the Map options object) to true:</p>
+		<div id="googleMap" style="width:500px;height:380px;"></div>
+		<h1>Google Maps - Turn On All Controls</h1>
+		<p>Some controls appear on the map by default; while others will not appear unless you set them.</p>
+		<p>Adding or removing controls from the map is specified in the Map options object.</p>
+		<p>Set the control to true to make it visible - Set the control to false to hide it.</p>
+		<p>The following example turns "on" all controls:</p>
+		<div id="googleMap1" style="width:500px;height:380px;"></div>
+		<h1>Google Maps - Modifying Controls</h1>
+		<p>Several of the map controls are configurable.</p>
+		<p>The controls can be modified by specifying control options fields.</p>
+		<p>For example, options for modifying a Zoom control are specified in the zoomControlOptions field. The zoomControlOptions field may contain:</p>
+		<ul>
+			<li>google.maps.ZoomControlStyle.SMALL - displays a mini-zoom control (only + and - buttons)</li>
+			<li>google.maps.ZoomControlStyle.LARGE - displays the standard zoom slider control</li>
+			<li>google.maps.ZoomControlStyle.DEFAULT - picks the best zoom control based on device and map size</li>
+		</ul>
+		<div id="googleMap2" style="width:500px;height:380px;"></div>
+		<p><b>Note:</b> If you modify a control, always enable the control first (set it to true).</p>
+		<p>Another configurable control is the MapType control.</p>
+		<p>Options for modifying a control are specified in the mapTypeControlOptions field. The mapTypeControlOptions field may contain::</p>
+		<ul>
+			<li>google.maps.MapTypeControlStyle.HORIZONTAL_BAR - display one button for each map type</li>
+			<li>google.maps.MapTypeControlStyle.DROPDOWN_MENU - select map type via a dropdown menu</li>
+			<li>google.maps.MapTypeControlStyle.DEFAULT - displays the "default" behavior (depends on screen size)</li>
+		</ul>
+		<div id="googleMap3" style="width:500px;height:380px;"></div>
+		<p>You can also position a control, with the ControlPosition property:</p>
+		<div id="googleMap4" style="width:500px;height:380px;"></div>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="script.js" type="text/javascript"></script>
+		</body>
+</html>
+	

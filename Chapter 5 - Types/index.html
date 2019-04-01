@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Types</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../../Libraries/Bootstrap Library/css/bootstrap.min.css">
+	<script src="../../../Libraries/Bootstrap Library/js/jquery.min.js"></script>
+	<script src="../../../Libraries/Bootstrap Library/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+		background-image:url("background.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	</style>
+	</head>
+		<body>
+		<h1>Google Maps - 45° Perspective View</h1>
+		<p>The map types SATELLITE and HYBRID support a 45° perspective imagery view for certain locations (only at high zoom levels).</p>
+		<p>If you zoom into a location with 45° imagery view, the map will automatically alter the perspective view. In addition, the map will add:</p>
+		<ul>
+			<li>A compass wheel around the Pan control, allowing you to rotate the image</li>
+			<li>A Rotate control between the Pan and Zoom controls, allowing you to rotate the image 90°</li>
+			<li>A toggle control for displaying the 45° perspective view, under the Satellite control/label</li>
+		</ul>
+		<p><b>Note:</b> Zooming out from a map with 45° imagery will revert each of these changes, and the original map is displayed.</p>
+		<p>The following example shows a 45° perspective view of Palazzo Ducale in Venice, Italy:</p>
+		<div id="googleMap" style="width:500px;height:380px;"></div>
+		<p><b>Tip:</b> Google adds 45° Imagery for new locations all the time. Check out the <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112099477591857711257.00048ad05c320f746f5c2&t=h&ll=8.787199,-45.827047&spn=85.447389,153.703486&dap=&source=embed">list of 45° imagery</a> on Google Maps.</p>
+		<h1>Google Maps - Disable 45° Perspective View - setTilt(0)</h1>
+		<p>You can disable 45° perspective view by calling setTilt(0) on the Map object:</p>
+		<div id="googleMap1" style="width:500px;height:380px;"></div>
+		<p><b>Tip:</b>To enable 45° perspective view at a later point, call setTilt(45).</p>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="script.js" type="text/javascript"></script>
+		</body>
+</html>
+	
